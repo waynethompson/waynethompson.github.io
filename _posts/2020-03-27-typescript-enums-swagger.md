@@ -3,7 +3,7 @@ layout: post
 title:  "Generating Typescript Enums correctly with NSwag from Swagger docs created with Swashbuckle."
 date:   2020-03-27 15:51:00 +1000
 categories: [typescript, swagger, development]
-permalink: /blog/nswag-swashbuckle-enum-from-swagger/
+permalink: /blog/how-to-remove-x-powered-by-header-in-net-core/
 ---
 
 We have been generating typescript classes and data clients for our angular application with NSwag by by pointing it at our AspNetCore api swagger documentation which was generated using swashbuckle.
