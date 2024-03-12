@@ -2,7 +2,7 @@
 layout: post
 title:  "Generating Typescript Enums correctly with NSwag from Swagger docs created with Swashbuckle."
 date:   2020-03-27 19:00:00 +1000
-categories: dotnet typescript
+categories: [dotnet, typescript, development]
 permalink: /blog/nswag-swashbuckle-enum-from-swagger/
 ---
 
