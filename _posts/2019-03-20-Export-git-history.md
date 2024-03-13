@@ -3,6 +3,7 @@ layout: post
 title:  "Export git log history to a text file"
 date:   2019-03-21 08:59:00 +1000
 categories: [git, development]
+tags: [git, development]
 permalink: /blog/export-git-log-history-to-a-text-file/
 ---
 

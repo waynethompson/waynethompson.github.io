@@ -3,6 +3,7 @@ layout: post
 title:  "Debugging a couple of AspNetCore websites and your machine gets slow?"
 date:   2019-03-21 10:06:00 +1000
 categories: [dotmet, development]
+tags: [powershell, windows, development]
 permalink: /blog/debugging-a-couple-of-aspnetcore-websites-on-windows-10-and-your-machine-gets-slow/
 ---
 

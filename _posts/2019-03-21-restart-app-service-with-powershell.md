@@ -3,6 +3,7 @@ layout: post
 title:  "Restarting all the Azure App Services in a resource group using PowerShell."
 date:   2019-03-21 10:33:00 +1000
 categories: [azure, development]
+tags: [powershell, azure, development]
 permalink: /blog/restarting-all-the-azure-app-services-in-a-resource-group-using-powershell/
 ---
 

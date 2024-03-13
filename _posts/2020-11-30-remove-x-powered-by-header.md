@@ -3,6 +3,7 @@ layout: post
 title:  "How to remove x-powered-by header in .net core"
 date:   2020-11-30 15:34:00 +1000
 categories: [dotnet, swagger, development]
+tags: [asp.net, development, server, sys admin]
 permalink: /blog/nswag-swashbuckle-enum-from-swagger/
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title:  "How to use square brackets '[]' in a string in a SQL query"
 date:   2023-03-01 19:00:00 +1000
 categories: [programming, databases]
+tags: [data, sql, sql server]
 permalink: /blog/how-to-use-square-brackets-in-a-string-in-a-sql-query/
 ---
 

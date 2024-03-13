@@ -3,6 +3,7 @@ layout: post
 title:  "Creating Azure SQL logins & users that easily replicate to all databases."
 date:   2020-12-14 12:32:00 +1000
 categories: [azure, sql]
+tags: [data, sql, azure]
 permalink: /blog/creating-azure-sql-logins-users-that-easily-replicate-to-all-databases/
 ---
 

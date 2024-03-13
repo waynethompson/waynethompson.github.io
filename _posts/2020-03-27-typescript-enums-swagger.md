@@ -3,6 +3,7 @@ layout: post
 title:  "Generating Typescript Enums correctly with NSwag from Swagger docs created with Swashbuckle."
 date:   2020-03-27 15:51:00 +1000
 categories: [typescript, swagger, development]
+tags: [development, nswag]
 permalink: /blog/how-to-remove-x-powered-by-header-in-net-core/
 ---
 

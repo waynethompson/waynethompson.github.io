@@ -3,6 +3,7 @@ layout: post
 title:  "The trade off between Sensitivity and Specificity"
 date:   2021-03-21 17:15:00 +1000
 categories: [data science, statistics]
+tags: [data, statistics]
 permalink: /blog/the-trade-off-between-sensitivity-and-specificity/
 ---
 

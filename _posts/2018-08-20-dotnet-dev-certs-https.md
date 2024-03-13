@@ -3,6 +3,7 @@ layout: post
 title:  "Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found."
 date:   2018-08-20 19:00:00 +1000
 categories: [dotnet, development]
+tags: [dotnet, ssl, development]
 permalink: /blog/dotnet-dev-certs-https/
 ---
 
