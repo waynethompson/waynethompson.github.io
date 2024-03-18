@@ -8,9 +8,6 @@ permalink: /blog/GovernanceFrameworks/
 ---
 
 
-# The Ultimate Guide to Governance Frameworks
-
-
 If you are new to leading tech teams, you may have heard about governance but were unsure what it is or how it applies to IT or building software. Put simply, governance gives your team structure, guidelines, and ways to measure success.
 
 From IT governance to risk management, quality control to cybersecurity, there's a governance framework for nearly every aspect of your organization. This blog post will provide a comprehensive overview of the most widely used frameworks, empowering you to select the ones that best fit your needs.
