@@ -4,7 +4,7 @@ title:  "The Ultimate Guide to Governance Frameworks"
 date:   2024-03-01 22:00:00 +1000
 categories: [data, Governance]
 tags: [data, governance, cto, strategy]
-permalink: /blog/GovernanceFrameworks/
+permalink: /blog/governance-frameworks-for-enterprise-it/
 ---
 
 
