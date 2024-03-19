@@ -4,15 +4,17 @@
 {% include head.html %}
 
 <body>
-
+    <header>
     {% include nav.html %}
-
+    </header>
     <div class="clearfix"></div>
 
     <main class="container">
         <div class="row">
             <div class="col-8">{{ content }}</div>
-            <div class="col"></div>
+            <div class="col">
+                {% include sidebar.html %}
+            </div>
             
         </div>
     </main>

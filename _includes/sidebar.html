@@ -1,0 +1,27 @@
+<aside id="sidebar">
+    <h3>Categories</h3>
+    {% assign categories = site.categories | sort %}
+    {% for category in site.categories %}
+     <span class="site-tag">
+        <a href="/category/{{ category | first | slugify }}/"
+            style="font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%">
+                {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+        </a>
+    </span>
+    {% endfor %}
+
+    <h3>Tags</h3>
+
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+    <span class="site-tag">
+        <a href="/tags/{{ tag | first | slugify }}/"
+            style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+        </a>
+    </span>
+    {% endfor %}
+
+
+
+</aside>

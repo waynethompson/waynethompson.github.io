@@ -8,7 +8,11 @@ permalink: /blog/data-driven-decisions-for-risk-management/
 ---
 
 
+
 Imagine a data breach exposing millions of customer records. Traditional risk assessments, often reliant on subjective scales, struggle to communicate the true impact of such an event. Here's where the Factor Analysis of Information Risk (FAIR) framework steps in. FAIR provides a structured approach to analysing, understanding, and quantifying operational and cyber risk in financial terms (Anderson 2018). FAIR’s data-driven approach to assess and prioritise cybersecurity risks compliments other risk frameworks which propose the necessity to quantify risk without offering guidance on how that should be achieved (FAIR Institute 2024). This formulaic approach to risk simples the process of quantifiable risk management, which is profound as it has been deemed by many as an impossible feat (Freund and Jones 2014).
+
+
+![The FAIR Framework](/assets/images/2024/2024-03-17-The-FAIR-Advantage.jpg)
 
 
 A challenge of operational risk and information security professionals is the limitations of terminology in the domain of risk related communication (Freund and Jones 2014, ch 3). The intuitive terminology in FAIR simplifies the process of decomposing a risk into an ontological tree diagram of its components. In the process it elicits measurable factors like threat event frequency, vulnerability likelihood, and loss magnitude, which are used to apply probabilistic and loss metrics to a measurement algorithm, resulting in a quantifiable value (Yun, Cho et al. 2015). 

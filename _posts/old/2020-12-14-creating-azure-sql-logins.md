@@ -11,12 +11,16 @@ Creating Azure SQL logins and database users is fairly simple.
 
 First create the login on the server:
 
+```sql
     CREATE LOGIN login_name WITH PASSWORD = 'strong_password';
+```
 
 Then create the user on the database and assign permissions
 
+```sql
     CREATE USER 'user_name' FOR LOGIN 'login_name';
     EXEC sp_addrolemember 'db_datareader', 'user_name'
+```
 
 I became stuck on what the order of creating Azure sql server logins and then database users on the primary database and then on the secondary read only database that it replicates to.
 This is because users replicate but logins do not. While at the same time I could create logins on the read only replicant but could not create users.
@@ -25,13 +29,16 @@ Thinking about it now the simple solution may be to create the logins on both se
 
 A simpler solution is to create Contained users which replicate with their password.
 
+```sql
     CREATE USER user_name WITH PASSWORD = 'strong_password';
     EXEC sp_addrolemember 'db_datareader', 'user_name'
-
+```
 
 When you refresh passwords in future this can be done on the primary only and have it replicate:
 
+```sql
     ALTER USER user_name WITH PASSWORD = 'strong_password';
+```
 
 Making for a much simpler solution that will easily scale when new replicates are brought online.
 

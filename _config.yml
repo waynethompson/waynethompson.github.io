@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Wayne Thompsons Blog
+title: Code, Cloud, & CTO Insights
 email: wayne@waynethompson.com.au
 description: >- # this means to ignore newlines until "baseurl:"
   This is a test for a blog
@@ -30,6 +30,8 @@ show_excerpts: twitter_username
 # Build settings
 #theme: minima
 #remote_theme: samarsault/plainwhite-jekyll
+
+tag_dir: tage_index
 
 plugins:
   - jekyll-feed

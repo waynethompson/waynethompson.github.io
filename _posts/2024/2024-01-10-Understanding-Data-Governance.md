@@ -2,7 +2,7 @@
 layout: post
 title:  "Understanding the Essentials of Data Governance in the Digital Age"
 date:   2024-01-10 17:55:00 +1000
-categories: [data, Governance]
+categories: [data, governance]
 tags: [data, governance, cto, strategy]
 permalink: /blog/understanding-the-essentials-of-data-governance-in-the-digital-age/
 ---
