@@ -1,11 +1,16 @@
 ---
-
-
+layout: post
+title:  "Synergy Between Val IT and DTEF: Driving IT Strategy and Outcome Alignment."
+date:   2024-03-20 12:00:00 +1000
+categories: [governance, IT, strategy]
+tags: [governance, IT, strategy, digital trust, Val IT, DTEF]
+permalink: /blog/synergy-val-it-dtef-driving-IT-strategy/
 ---
 
 
 
-Synergy Between Val IT and DTEF: Driving IT Strategy and Outcome Alignment.
+
+
 In today's rapidly changing digital landscape, organisations face the complex task of ensuring their IT investments demonstrably contribute to broader business goals. Furthermore, establishing and maintaining digital trust among customers, suppliers, and other stakeholders is paramount. Two governance frameworks stand out as particularly valuable tools in this effort: Val IT and the Digital Trust Ecosystem Framework (DTEF). These distinct frameworks can operate in strong synergy to promote better alignment between IT strategies and overall business outcomes.
 
 Val IT, developed by ISACA, is a governance framework centred on value creation from IT investments (Lombardi, Del Giudice et al. 2016). The core principles of Val IT emphasize:
