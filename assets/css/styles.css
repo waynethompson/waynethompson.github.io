@@ -22,4 +22,4 @@
 div.highlight { padding: 10px; background-color: #202020; }
 .highlight .lineno { border: none; border-radius: 0; border-right: solid 1px; color: #aaa; }
 .highlight .code pre { border: none; white-space: pre; overflow-x: auto; word-wrap: normal; }
-.highlight code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+.highlight code { color: lightgoldenrodyellow; display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }

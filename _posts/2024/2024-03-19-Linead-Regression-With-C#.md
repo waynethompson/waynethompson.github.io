@@ -33,7 +33,7 @@ namespace LinearRegression
         /// <param name="x">Array of x values</param>
         /// <param name="y">Array of y values</param>
         /// <returns>The slope of the regression line</returns>
-        private double CalculateSlope(double[] x, double[] y)
+        public double CalculateSlope(double[] x, double[] y)
         {
             double xMean = x.Average();
             double yMean = y.Average();
@@ -57,7 +57,7 @@ namespace LinearRegression
         /// <param name="y">Array of y values</param>
         /// <param name="slope">The slope of the regression line</param>
         /// <returns>The y-intercept of the regression line</returns>
-        private double CalculateIntercept(double[] x, double[] y, double slope)
+        public double CalculateIntercept(double[] x, double[] y, double slope)
         {
             double xMean = x.Average();
             double yMean = y.Average();
@@ -122,15 +122,9 @@ In this example, we:
 4. Print the line's equation.
 5. Make a prediction for a new input value.
 
-**Beyond the Basics**
+## Checking against R
 
-Keep in mind that this is a simplified implementation for educational purposes. Here are some things to consider for more robust work:
+More to come
 
-* **Data Validation:**  Ensure your data makes sense for linear regression (check for linear patterns).
-* **Goodness of Fit:** Calculate metrics like R-squared to assess how well your line fits the data.
-* **Advanced Libraries:** Explore libraries like ML.NET or Math.NET Numerics for more sophisticated statistical tools and machine learning models.
-
-
-
-
-https://www.kaggle.com/datasets/himanshunakrani/student-study-hours?resource=download
+Git repo at 
+https://github.com/waynethompson/MlAlgorithms
