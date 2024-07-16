@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Technical Debt in Action: Real-World Examples and Their Consequences"
-date:   2024-07-16 17:55:00 +1000
+date:   2024-07-16 12:00:00 +1000
 categories: [engineering]
 tags: [engineering, code review, technical debt]
 permalink: /blog/Technical-Debt-Real-World-Examples/
