@@ -61,3 +61,6 @@ Spotify, known for its innovative engineering culture, has popularized the use o
 ## The bottom line
 
 Engineering guilds offer a powerful way to cultivate expertise, foster community, and drive innovation within tech organisations. By providing a structure for cross-functional collaboration and knowledge sharing, guilds can help companies maintain a competitive edge in the fast-paced world of technology. Whether you're a startup or a large enterprise, consider how engineering guilds might benefit your organisation's culture and technical capabilities.
+
+## Further reading
+- [How Our Engineering Team Uses Guilds to Increase Collaboration](https://www.optimizely.com/insights/blog/how-our-engineering-team-uses-guilds-to-increase-collaboration/)
