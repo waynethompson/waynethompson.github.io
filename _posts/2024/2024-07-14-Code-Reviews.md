@@ -31,7 +31,7 @@ Before diving into the nitty-gritty, always start by understanding the purpose o
    * **Comments:** Are comments used judiciously to explain complex logic or non-obvious decisions?
 
 3. **Design:**
-   * **Modularity:** Is the code well-structured into manageable modules? Are there opportunities to refactor for better organization?
+   * **Modularity:** Is the code well-structured into manageable modules? Are there opportunities to refactor for better organisation?
    * **Coupling:** Is the code loosely coupled, meaning that changes in one part are unlikely to cause unexpected issues elsewhere?
    * **Cohesion:** Are related pieces of code grouped together? Does each module have a single, clear responsibility?
 

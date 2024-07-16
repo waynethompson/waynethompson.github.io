@@ -22,7 +22,7 @@ FAIR delivers a clear picture of potential financial losses over time. It can ca
 
  
 **Impact on Risk Management:**  FAIR offers several benefits for risk management:
-1.	**Quantitative Analysis:** Moving away from traffic light charts and vague scales, FAIR allows organizations to better understand their exposure by expressing risk in financial terms.
+1.	**Quantitative Analysis:** Moving away from traffic light charts and vague scales, FAIR allows organisations to better understand their exposure by expressing risk in financial terms.
 2.	**Improved Decision Making:** threats can be viewed in terms of financial impact. Allowing stakeholders to understand the potential losses and prioritise based on their potential impact on the organisation. Leading to better resource allocation and more effective risk management. 
 3.	**Consistency and Communication:** FAIR provides a framework that reduces uncertainty an improves consistency in risk analysis. It helps risk professionals generate meaningful metrics that can be easily understood and communicated to stakeholders.
 4.	**Risk prioritisation:** By calculating the probable loss associated with each risk scenario, organisations can prioritise risks based on their potential impact. This allows them to focus on their resources on mitigating the most impactful risks first.
