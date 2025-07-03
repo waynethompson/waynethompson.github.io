@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  "Lazy Loading HTTP Requests in Angular"
-date:   2024-07-03 12:00:00 +1000
+title:  "🧠 Lazy Loading HTTP Requests in Angular with RxJS and BehaviorSubject"
+date:   2025-07-03 12:00:00 +1000
 categories: [angular, frontend]
 tags: [lazy loading, http, angular, performance]
 permalink: /blog/2025/Lazy-Loading-HTTP-Requests-in-Angular/
 ---
-
-# 🧠 Lazy Loading HTTP Requests in Angular with RxJS and BehaviorSubject
 
 When building modern Angular apps, it’s common to have services that fetch data from HTTP endpoints. But you don’t always want those calls to fire immediately, instead, you might want **lazy loading**: only fetch the data when it’s actually needed.
 
