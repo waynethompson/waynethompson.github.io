@@ -5,7 +5,11 @@ layout: default
 
 <div class="home">
   {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
+  <section class="home-hero" aria-label="Home introduction">
+    <p class="home-eyebrow">Engineering Leadership Journal</p>
+    <h1 class="page-heading">{{ page.title }}</h1>
+    <p class="home-dek">Architecture decisions, delivery lessons, and practical software leadership from real projects.</p>
+  </section>
   {%- endif -%}
 
   {{ content }}
@@ -34,7 +38,7 @@ layout: default
         </a>
       </h4>
       {%- if site.show_excerpts -%}
-      <p class="card-text">{{ post.excerpt }}</p>
+      <p class="card-text">{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 42 }}</p>
       {%- endif -%}
     </div>
   </div>
@@ -43,26 +47,7 @@ layout: default
 
   {% if site.paginate %}
   <div class="pager">
-    <ul class="pagination">
-      {%- if paginator.previous_page %}
-      <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page
-          }}</a></li>
-      {%- else %}
-      <li>
-        <div class="pager-edge">•</div>
-      </li>
-      {%- endif %}
-      <li>
-        <div class="current-page">{{ paginator.page }}</div>
-      </li>
-      {%- if paginator.next_page %}
-      <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-      {%- else %}
-      <li>
-        <div class="pager-edge">•</div>
-      </li>
-      {%- endif %}
-    </ul>
+    <ul class="pagination">{%- if paginator.previous_page -%}<li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>{%- else -%}<li><div class="pager-edge">•</div></li>{%- endif -%}<li><div class="current-page">{{ paginator.page }}</div></li>{%- if paginator.next_page -%}<li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>{%- else -%}<li><div class="pager-edge">•</div></li>{%- endif -%}</ul>
   </div>
   {%- endif %}
 

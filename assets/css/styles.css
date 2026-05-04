@@ -12,12 +12,26 @@
 
 html,
 body {
+    background-color: var(--site-bg);
     background: radial-gradient(circle at top right, #fbe8d4 0%, var(--site-bg) 40%, #f2efe8 100%);
     color: var(--site-text);
 }
 
 body {
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
     line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .navbar-brand,
+.home .post-link {
+    font-family: "Archivo Black", "Franklin Gothic Medium", sans-serif;
+    letter-spacing: 0.01em;
 }
 
 a {
@@ -54,20 +68,89 @@ a:focus {
     opacity: 1;
 }
 
+.navbar .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    opacity: 1;
+}
+
 .site-main {
     margin-top: 2.5rem;
     margin-bottom: 3rem;
+}
+
+.content-column,
+.sidebar-column,
+.post,
+.post.card,
+.post .card-body,
+.post .card-header,
+.post .post-meta,
+.page,
+.page .card-body,
+.page .card-header {
+    color: var(--site-text);
+}
+
+.post.card,
+.page.card {
+    background: linear-gradient(165deg, var(--site-paper), #fff9f1);
+    border: 1px solid var(--site-border);
+    border-radius: 16px;
+    box-shadow: var(--site-shadow);
+}
+
+.post .card-header,
+.page .card-header {
+    background: rgba(255, 255, 255, 0.54);
+    border-bottom: 1px solid var(--site-border);
+}
+
+.post .card-body,
+.page .card-body {
+    background: transparent;
+}
+
+.post .post-meta {
+    color: var(--site-muted);
+    margin-bottom: 1rem;
 }
 
 .home {
     margin-top: 0;
 }
 
+.home-hero {
+    background: linear-gradient(135deg, rgba(255, 253, 248, 0.92), rgba(255, 239, 221, 0.88));
+    border: 1px solid var(--site-border);
+    border-radius: 18px;
+    box-shadow: var(--site-shadow);
+    margin-bottom: 1.5rem;
+    padding: clamp(1.25rem, 4.8vw, 2.2rem);
+}
+
+.home-eyebrow {
+    color: var(--site-brand-strong);
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .home .page-heading {
     font-size: clamp(2.2rem, 4.5vw, 3.1rem);
     line-height: 1.05;
     letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.45rem;
+}
+
+.home-dek {
+    color: var(--site-muted);
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    margin: 0;
+    max-width: 46ch;
 }
 
 .home .card {
@@ -111,6 +194,10 @@ a:focus {
 .home .card-text {
     font-size: 1.1rem;
     color: #38373b;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 #sidebar {
@@ -169,6 +256,81 @@ a:focus {
 
     .home .post-link {
         font-size: clamp(1.45rem, 6.2vw, 2rem);
+    }
+
+    .home-hero {
+        border-radius: 14px;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --site-bg: #111215;
+        --site-paper: #191c22;
+        --site-border: #333843;
+        --site-text: #edeef1;
+        --site-muted: #b4b8c2;
+        --site-brand: #f08b75;
+        --site-brand-strong: #ffb49d;
+        --site-shadow: 0 14px 34px rgba(0, 0, 0, 0.42);
+    }
+
+    html,
+    body {
+        background-color: var(--site-bg);
+        background: radial-gradient(circle at top right, #22242b 0%, var(--site-bg) 42%, #0d0f12 100%);
+    }
+
+    .home-hero {
+        background: linear-gradient(130deg, rgba(31, 34, 41, 0.98), rgba(39, 29, 28, 0.95));
+    }
+
+    .home .card {
+        background: linear-gradient(165deg, #1a1d23, #1f2329);
+    }
+
+    .post.card,
+    .page.card {
+        background: linear-gradient(165deg, #1a1d23, #1f2329);
+    }
+
+    .home .card-header {
+        background: rgba(19, 21, 26, 0.75);
+    }
+
+    .post .card-header,
+    .page .card-header {
+        background: rgba(19, 21, 26, 0.75);
+    }
+
+    .home .card-text {
+        color: #d5d9e1;
+    }
+
+    .post .card-body,
+    .page .card-body,
+    .post .card-header,
+    .page .card-header,
+    .post .post-meta,
+    .content-column,
+    .sidebar-column {
+        color: var(--site-text);
+    }
+
+    .site-tag a {
+        background: rgba(24, 27, 34, 0.85);
+        border-color: var(--site-border);
+    }
+
+    .site-tag a:hover,
+    .site-tag a:focus {
+        background: #222732;
+        border-color: #5f6575;
+    }
+
+    div.highlight {
+        background-color: #0d1014;
     }
 }
 
