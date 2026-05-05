@@ -4,21 +4,22 @@ permalink: /tags/
 title: Tags
 ---
 
-<div id="tags">
-    {% for category in site.tags %}
-      <div class="archive-group">
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        <div id="#{{ category_name | slugize }}"></div>
-        <p></p>
+<div id="tags" class="archive-grid">
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+      <section class="archive-group archive-card">
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <div id="#{{ tag_name | slugize }}"></div>
     
-        <h3 class="category-head">{{ category_name }}</h3>
-        <a name="{{ category_name | slugize }}"></a>
-        {% for post in site.categories[category_name] %}
+        <h3 class="category-head">{{ tag_name }}</h3>
+        <a name="{{ tag_name | slugize }}"></a>
+        {% for post in site.tags[tag_name] %}
         <article class="archive-item">
+          <time class="archive-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
           <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
         </article>
         {% endfor %}
-      </div>
+      </section>
     {% endfor %}
-    </div>
+</div>
     

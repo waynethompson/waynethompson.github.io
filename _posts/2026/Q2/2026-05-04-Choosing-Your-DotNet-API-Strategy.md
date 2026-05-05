@@ -11,6 +11,8 @@ Building a .NET web API in 2026 isn't just about choosing between Controllers or
 
 This post came out of research I was doing while starting a few new projects and evaluating the best .NET 10 and React templates. The more I dug in, the more I realised the architectural decision around how you handle requests is just as important as any other tech choice.
 
+<!--more-->
+
 Here's a breakdown of how they stack up.
 
 ---

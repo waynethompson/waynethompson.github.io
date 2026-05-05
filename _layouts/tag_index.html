@@ -1,8 +1,11 @@
-<ul class="archive-list">
-    {% for post in site.tags[page.tag] %}
-    <li>
-        <a href='{{post.url}}'>{{post.title}}</a>
-        <time datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%Y-%m-%d" }}</time>
-    </li>
-    {% endfor %}
-</ul>
+<div class="archive-grid archive-grid-single">
+    <section class="archive-group archive-card">
+        <h3 class="category-head">{{ page.tag | replace: '-', ' ' }}</h3>
+        {% for post in site.tags[page.tag] %}
+        <article class="archive-item">
+            <time class="archive-date" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%b %-d, %Y" }}</time>
+            <h4><a href='{{post.url}}'>{{post.title}}</a></h4>
+        </article>
+        {% endfor %}
+    </section>
+</div>

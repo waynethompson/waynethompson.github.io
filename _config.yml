@@ -27,6 +27,7 @@ url: "https://www.waynethompson.com.au" # the base hostname & protocol for your 
 twitter_username: waynebthompson
 github_username:  waynethompson
 show_excerpts: twitter_username
+excerpt_separator: "<!--more-->"
 # Build settings
 #theme: minima
 #remote_theme: samarsault/plainwhite-jekyll
