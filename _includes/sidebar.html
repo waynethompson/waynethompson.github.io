@@ -3,7 +3,7 @@
     {% assign categories = site.categories | sort %}
     {% for category in categories %}
      <span class="site-tag">
-        <a href="/category/{{ category | first | slugify }}/">
+        <a href="/categories/#{{ category | first | slugify }}">
                 {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
         </a>
     </span>
@@ -12,10 +12,9 @@
     <h3>Tags</h3>
 
     {% assign tags = site.tags | sort %}
-    {% assign sorted_tags = tags | sort: 'last' | reverse %}
-    {% for tag in sorted_tags limit: 18 %}
+    {% for tag in tags limit: 18 %}
     <span class="site-tag">
-        <a href="/tags/{{ tag | first | slugify }}/">
+        <a href="/tage_index/{{ tag | first | slugify }}/">
                 {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
         </a>
     </span>

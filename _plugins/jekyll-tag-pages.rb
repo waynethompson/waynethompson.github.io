@@ -23,7 +23,8 @@ module Jekyll
         if site.layouts.key? 'tag_index'
           dir = site.config['tag_dir'] || 'tag'
           site.tags.each_key do |tag|
-            site.pages << TagPage.new(site, site.source, File.join(dir, tag), tag)
+            tag_slug = Jekyll::Utils.slugify(tag)
+            site.pages << TagPage.new(site, site.source, File.join(dir, tag_slug), tag)
           end
         end
       end
