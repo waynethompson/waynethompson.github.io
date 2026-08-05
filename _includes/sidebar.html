@@ -2,9 +2,9 @@
     <h3>Categories</h3>
     {% assign categories = site.categories | sort %}
     {% for category in categories %}
-     <span class="site-tag">
+     <span class="site-tag site-tag-category">
         <a href="/categories/#{{ category | first | slugify }}">
-                {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+                {{ category[0] | replace:'-', ' ' }} <span class="site-tag-count">{{ category | last | size }}</span>
         </a>
     </span>
     {% endfor %}
@@ -13,9 +13,9 @@
 
     {% assign tags = site.tags | sort %}
     {% for tag in tags limit: 18 %}
-    <span class="site-tag">
+    <span class="site-tag site-tag-hash">
         <a href="/tage_index/{{ tag | first | slugify }}/">
-                {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                {{ tag[0] | replace:'-', ' ' }} <span class="site-tag-count">{{ tag | last | size }}</span>
         </a>
     </span>
     {% endfor %}

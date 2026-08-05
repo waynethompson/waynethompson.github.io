@@ -6,7 +6,7 @@ layout: default
 <div class="home">
   {%- if page.title -%}
   <section class="home-hero" aria-label="Home introduction">
-    <p class="home-eyebrow">Engineering Leadership Journal</p>
+    <p class="home-eyebrow"><span aria-hidden="true">// </span>Engineering Leadership Journal</p>
     <h1 class="page-heading">{{ page.title }}</h1>
     <p class="home-dek">Architecture decisions, delivery lessons, and practical software leadership from real projects.</p>
   </section>
@@ -30,7 +30,10 @@ layout: default
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   {%- for post in posts -%}
   <div class="card border-secondary mb-3{% if forloop.first %} featured-post{% endif %}">
-    <div class="card-header">{{ post.date | date: date_format }}</div>
+    <div class="card-header editor-tab">
+      <span class="editor-tab-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="editor-tab-label">{{ post.date | date: date_format }}</span>
+    </div>
     <div class="card-body">
       {%- if forloop.first -%}
       <p class="featured-label">Latest article</p>
